@@ -1,0 +1,1750 @@
+@font-face 
+	font-family: "RobotoRegular"
+	src: url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff")
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype")
+	font-style: normal
+	font-weight: normal
+
+@font-face 
+	font-family: "RobotoLight"
+	src: url("../fonts/RobotoLight/RobotoLight.woff") format("woff")
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype")
+	font-style: normal
+	font-weight: normal
+
+@font-face 
+	font-family: "RobotoMedium"
+	src: url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff")
+	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype")
+	font-style: normal
+	font-weight: normal
+
+@font-face 
+	font-family: "RobotoBold"
+	src: url("../fonts/RobotoBold/RobotoBold.woff") format("woff")
+	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype")
+
+@font-face 
+	font-family: "RobotoBlack"
+	src: url("../fonts/RobotoBlack/RobotoBlack.ttf") format("truetype")
+	font-style: normal
+	font-weight: normal
+
+
+
+*
+	margin: 0
+	padding: 0
+
+
+body
+	font-size: 18px
+	color: #000
+	font-family: "RobotoRegular"
+
+.container
+	width: 1440px
+	padding: 0 15px
+	margin: 0 auto
+	box-sizing: border-box
+
+ul
+	list-style: none
+
+a
+	text-decoration: none
+	color: #000
+
+h2
+	font-size: 98px
+	color: #010101
+	font-family: "RobotoBlack"
+	text-transform: uppercase
+
+p
+	margin-bottom: 20px
+
+
+/*TOP*/
+
+
+.top
+	color: #010101
+	display: block
+	padding: 45px 0 155px 0
+	background: url('../img/saa.svg') center no-repeat
+	background-size: cover
+
+.top_line
+	display: flex
+	justify-content: space-between
+	align-items: center
+	.logo 
+		padding-left: 110px
+
+.top_link
+	display: flex
+	align-items: center
+	ul 
+		display: flex
+		margin-right: 25px
+		li
+			font-size: 20px
+			font-family: "RobotoMedium"
+			margin-right: 15px
+
+.h1
+	text-align: center
+	margin-top: 256px
+	h1
+		font-size: 90px
+		font-family: "RobotoBlack"
+		line-height: 120px
+	span
+		font-size: 35px
+		text-transform: uppercase
+		color: #fff
+		font-family: "RobotoBlack"
+		max-width: 730px
+		display: inline-block
+
+.main-text
+	border-top: 1px solid #000
+	max-width: 620px
+	width: 100%
+	text-align: center
+	margin: 25px auto 0 auto
+	padding-top: 30px
+	p
+		font-size: 20px
+		font-family: "RobotoBold"
+		margin-bottom: 5px
+			
+.main-btn
+	width: 85%
+	margin: 0 auto
+	display: flex
+	justify-content: center
+	padding: 35px 25px 0 25px
+	font-family: "RobotoMedium"
+	.btn-success
+		padding: 0 12px
+	.btn-default
+		padding: 0 40px
+
+.brief-example
+	padding-top: 0
+	height: 0
+	opacity: 0
+	transition: all 0.5s
+	&.open
+		height: auto
+		padding-top: 100px
+		opacity: 1
+		transition: all 1s
+
+/*SMARTBRIEF*/
+
+.logo2
+	border-bottom: 1px solid #000
+	width: 100%
+	max-width: 600px
+	margin-bottom: 50px
+	padding-bottom: 45px
+
+.smartbrief
+	padding: 20px 0 220px 0
+	background: url('../img/bg2.svg') center no-repeat
+	background-size: 83%
+	background-position-y: 5px
+	.content
+		padding: 100px 0 0 90px
+		
+	.text-block
+		display: flex
+		width: 100%
+		ul 
+			max-width: 600px
+			width: 100%
+			&:first-child
+				margin-right: 30px
+			&:nth-child(2)
+				&:after
+					content: ''
+					width: 95%
+					display: flex
+					margin-left: auto
+					border-bottom: 1px solid #000
+					text-align: right
+					margin-top: 50px
+			li
+				position: relative
+				padding-left: 30px
+				text-align: justify
+				span
+					position: absolute
+					font-size: 75px
+					color: #b7bbb9
+					font-family: "RobotoBlack"
+					opacity: 0.5
+					top: 0
+					left: 0
+					line-height: 50px
+
+.text-block-bottom
+	text-align: right
+	padding-right: 115px
+	a:first-child
+		display: block
+		margin-bottom: 25px
+
+.btn-success
+	font-size: 24px
+	color: #010101
+	text-transform: uppercase
+	display: inline-block
+	line-height: 40px
+	border-radius: 20px
+	height: 40px
+	background: #57d677
+	padding: 0 40px
+	box-shadow: 0px 5px 9px 0px rgba(79,210,132,0.5)
+	cursor: pointer
+
+/*LIVE*/
+.legend
+	position: absolute
+	top: 0
+	right: 0
+
+.checkbox
+  position: absolute
+  z-index: -1
+  opacity: 0
+  margin: 10px 0 0 20px
+  + label
+    position: relative
+    padding: 0 0 0 60px
+    cursor: pointer
+    font-size: 20px
+    font-weight: bold
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 50px
+      height: 26px
+      border-radius: 13px
+      background: #0eace3
+      transition: .2s
+    &:after
+      content: ''
+      position: absolute
+      top: 2px
+      left: 2px
+      width: 22px
+      height: 22px
+      border-radius: 10px
+      background: #FFF
+      transition: .2s
+  &:checked + label
+    &:before
+      background: #0eace3
+    &:after
+      left: 26px
+
+
+
+
+.stats
+	display: flex
+
+.graph
+	max-width: 630px
+	width: 100%
+	padding-right: 55px
+	position: relative
+	.tooltip:nth-child(1)
+		top: 210px
+		max-width: 200px
+		left: 320px
+	.tooltip:nth-child(2)
+		width: 200px
+		left: 12px
+		top: 335px
+	.tooltip:nth-child(3)
+		width: 150px
+		left: 100px
+		top: 130px
+	.tooltip.th
+		width: 150px
+		left: 25px
+		top: 460px
+	.tooltip:nth-child(4)
+		width: 150px
+		left: 230px
+		top: 390px
+	.tooltip:nth-child(5)
+		width: 150px
+		left: 280px
+		top: 510px
+	.tooltip:nth-child(6)
+		width: 150px
+		left: 414px
+		top: 285px
+		&:before
+			display: none
+		&:after
+			content: ''
+			border: 10px solid transparent
+			border-top: 10px solid #515269
+			position: absolute
+			top: 100%
+			left: 50%
+			transform: translate(-50%, 0)
+
+.live
+	background: #e3e3e3
+	padding: 210px 0 160px 0
+	h2
+		line-height: 74px
+	span
+		font-size: 28px
+		text-transform: uppercase
+		font-family: "RobotoMedium"
+	.skew 
+		background: #4fd284
+	
+.index
+	z-index: 3
+	position: relative
+
+.s-wrap
+	position: relative
+	overflow: hidden
+	&:before
+		content: ''
+		background: url('../img/sl.svg') no-repeat
+		background-size: 90%
+		position: absolute
+		right: -18%
+		top: 13%
+		width: 100%
+		height: 100%
+		z-index: 2
+
+// .grap 
+//   max-width: 570px
+//   width: 100%
+//   background-image: linear-gradient(to right, #5ed375 40%, #5ed375 20%, #5ed375 40%, #5ed375 40%, #5ed375 60%, #5ed375 60%, #5ed375 80%, #5ed375 80%)
+//   height: 280px
+//   animation: grap 2s forwards
+//   clip-path: url('#clip-start')
+//   clip-path: polygon(0% 100%, 30% 95%, 70% 60%, 80% 65%, 100% 40%, 100% 100%, 0% 100%)
+
+
+// @keyframes grap
+//   to 
+//     clip-path: url('#clip-finish')
+//     clip-path: polygon(0% 70%, 30% 65%, 70% 30%, 80% 35%, 100% 10%, 100% 100%, 0% 100%)
+
+
+.live-graph
+	margin-bottom: 10px
+	margin-top: -40px
+	text.sm
+		font-family: "RobotoBlack"
+.Line
+  stroke: #8c8c8c
+  stroke-width: 1.5
+  stroke-linecap: square
+  opacity: 0
+
+
+.Point 
+  opacity: 0
+  stroke: #29B3C2
+  stroke-width: 3
+  fill: #FFFFFF
+
+
+.Point.Point--highlighted 
+  stroke: #F1C03E
+
+.percent 
+	font-family: "RobotoBlack"
+	display: flex
+	align-items: center
+	p 
+		.count
+			font-size: 120px
+			font-family: "RobotoBlack"
+	span
+		font-size: 85px
+
+.p-note
+	margin-left: 15px
+	p
+		font-size: 16px
+		font-family: "RobotoLight"
+	span
+		text-transform: uppercase
+		font-family: "RobotoBold"
+		font-size: 16px
+.day
+	font-size: 29px
+	font-family: "RobotoBlack"
+	margin-bottom: 11px
+
+.live-stats ul
+	display: flex
+	background: #2f2f2f
+	height: 37px
+	border-radius: 25px
+	padding: 0 5px
+	width: 590px
+	justify-content: center
+	p
+		color: #fff
+		font-family: "RobotoBlack"
+		font-size: 14px
+		margin-right: 5px
+		margin-bottom: 0
+	span
+		font-size: 14px
+		font-family: "RobotoBlack"
+		color: #fff
+		&.red
+			color: #ec3131
+		&.green
+			color: #4bd482
+	li
+		display: flex
+		align-items: center
+		&:after
+			content: ''
+			height: 14px
+			width: 2px
+			background: #fff
+			margin: 0 8px
+		&:last-child:after
+			display: none
+
+
+.live-note
+	display: flex
+	align-items: center
+	margin-top: 18px
+	.btn-default
+		margin-right: 25px
+		width: 220px
+		display: flex
+		justify-content: center
+		padding: 0
+	p 
+		margin-bottom: 0
+		a
+			color: #0aace4
+
+.live-total 
+	max-width: 770px
+	width: 100%
+	ul
+		display: flex
+		align-items: flex-end
+		margin-bottom: 35px
+		li
+			margin-right: 50px
+			position: relative
+			&:last-child
+				margin-right: 0
+			p
+				font-size: 24px
+				margin-bottom: 0
+			span
+				font-size: 56px
+				font-family: "RobotoBlack"
+			&.distr
+				margin-left: 50px
+				&:before
+					content: ''
+					width: 3px
+					height: 90px
+					background: #000
+					position: absolute
+					left: -35px
+					top: 50%
+					transform: translate(0, -50%)
+
+
+.progress 
+  	width: 100%
+  	height: 58px
+
+.progress-wrap 
+	margin: 20px 0
+	overflow: hidden
+	position: relative
+	border-radius: 30px
+	box-shadow: 0px 18px 16px 0px rgba(0,0,0,0.1)
+	background: #0aace4
+.progress-bar 
+	left: 0
+	position: absolute
+	top: 0
+	background: #fff
+
+.total-bottom
+	justify-content: space-between
+	margin-top: 40px
+	p
+		font-size: 20px!important
+
+
+.tooltip
+	position: absolute
+	background: #515269
+	border-radius: 20px 
+	color: #fff 
+	font-size: 14px!important
+	text-transform: none!important
+	padding: 5px 10px
+	font-family: "RobotoLight"!important
+	top: 100%
+	left: 50%
+	transform: translate(-50%, 0)
+	z-index: 4
+	min-width: 200px
+	width: 100%
+	display: none
+	&:before
+		content: ''
+		border: 10px solid transparent
+		border-bottom: 10px solid #515269
+		position: absolute
+		bottom: 100%
+		left: 50%
+		transform: translate(-50%, 0)
+
+
+.tool
+	position: relative
+	&.enable
+		.tooltip
+			display: block
+
+/*BRIEF*/
+
+.btn-more
+	font-size: 35px
+	color: #010101
+	text-transform: uppercase
+	font-family: "RobotoBlack"
+	object
+		margin-bottom: 2px
+		margin-left: 20px
+
+
+.brief
+	padding: 150px 0 0 0
+	.text-block
+		margin-left: 100px
+		width: 650px
+		z-index: 2
+		h2
+			font-size: 100px
+			margin-bottom: 40px
+			span 
+				font-size: 60px
+		p 
+			font-size: 25px
+			margin-bottom: 25px
+		.btn-block
+			margin-top: 60px
+			display: flex
+			justify-content: center
+			a 
+				width: 210px
+				display: flex
+				justify-content: center
+				padding: 0
+				color: #0aace4
+				border-color: #0aace4
+				&:first-child
+					margin-right: 30px
+	.content
+		display: flex
+		justify-content: space-between
+	.skew-wrap
+		bottom: 0
+
+.ipad
+	margin-top: -90px
+	margin-right: -100px
+	z-index: 2
+
+/*WORKS*/
+
+.works
+	background: #4fd284
+	padding: 50px 0 160px 0
+	h2
+		margin-left: 100px
+	.skew
+		background: #fff
+	.text-block-bottom 
+		.btn-success
+			background: #fff
+	.content
+		background: #4fd284
+		-webkit-box-shadow: -8px 8px 89px 0px rgba(32,145,77,0.44)
+		-moz-box-shadow: -8px 8px 89px 0px rgba(32,145,77,0.44)
+		box-shadow: -8px 8px 89px 0px rgba(32,145,77,0.44)
+		transform: skew(-1deg, -3deg)
+		position: relative
+		z-index: 3
+		&-wrap 
+			transform: skew(1deg, 3deg)
+
+.adv-caption
+	display: flex
+	justify-content: space-between
+	align-items: center
+	h3
+		font-size: 80px 
+		font-family: "RobotoBlack"
+		text-transform: uppercase
+		margin-right: 80px
+	.logo-big
+		margin: 7px 0 0 -35px
+
+.advantages
+	display: flex
+	justify-content: space-between
+	flex-flow: row wrap
+	margin-bottom: 20px
+	li
+		max-width: 270px
+		width: 100%
+		text-align: center
+		padding-bottom: 30px
+	&-text
+		margin: 0 40px
+		border-top: 1px solid #000
+		padding-top: 15px
+	&-img
+		height: 230px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+
+		
+
+.works-list
+	display: flex
+	padding: 0 160px
+	justify-content: space-between
+	text-align: center
+	&-img
+		display: flex
+		justify-content: center
+		margin-bottom: 10px
+		height: 110px
+		align-items: center
+	li
+		position: relative
+		&:after
+			content: ''
+			width: 99px
+			height: 96px
+			background: url("../img/devider.svg")
+			position: absolute
+			right: -80px
+			top: 0
+		&:last-child:after
+			display: none
+
+
+/*HOW*/
+.how
+	padding: 150px 0
+	h2 
+		font-size: 89px
+		color: #0eafe7
+		text-align: center
+		margin-bottom: 100px
+	&-text 
+		max-width: 690px
+		width: 100%
+		margin: 55px auto 0 auto
+		border-top: 2px solid #0eafe7
+		padding-top: 60px
+		p 
+			font-size: 18px
+			text-align: center
+			margin-bottom: 35px
+			padding: 0 20px
+
+/*PRODUCT*/
+
+.product 
+	padding: 50px 0 120px 0
+	background: #fafafa
+	h3 
+		font-size: 60px
+		text-align: center
+		text-transform: uppercase
+		font-family: "RobotoBlack"
+		position: relative
+		z-index: 3
+		margin-top: -40px
+	.skew 
+		background: #fafafa
+	&-block 
+		display: flex 
+		justify-content: space-between
+		padding: 0 150px
+	&-text 
+		width: 520px
+		span 
+			font-size: 25px
+			font-family: "RobotoBlack"
+		p 
+			font-size: 16px
+			margin-top: 20px
+		.text-block-bottom a 
+			font-size: 18px
+			span 
+				color: #1fb9ee
+				font-size: 18px
+			object
+				margin: 0 0 -1px 12px
+
+.upcoming
+	margin-top: 80px
+	&:before
+		content: ''
+		width: 690px
+		height: 2px 
+		background: #dcdcdc
+		display: block 
+		margin: 0 auto 55px auto
+	&:after
+		content: ''
+		width: 690px
+		height: 2px 
+		background: #dcdcdc
+		display: block 
+		margin: 55px auto 0 auto
+	h4 
+		font-size: 30px 
+		color: #4fd284
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 30px
+	&-list
+		display: flex
+		justify-content: center
+		li 
+			text-align: center
+			margin: 0 25px
+		p 
+			font-size: 40px 
+			text-transform: uppercase
+			font-family: "RobotoBlack"
+			color: #e3e3e3
+			margin-top: 20px
+			margin-bottom: 0
+
+
+
+/*ABOUT*/
+
+.about
+	padding: 220px 0 200px 0
+	background: url('../img/bg4.svg') no-repeat
+	background-size: cover
+	.skew
+		background: #0aace4
+	.content
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	.text-block
+		width: 850px
+		padding-left: 100px
+		p
+			width: 560px
+			text-align: right
+			color: #020428
+			margin-left: auto
+			display: flex
+			flex-direction: column
+			font-size: 20px
+	h3
+		font-size: 40px
+		color: #020428
+		font-family: "RobotoMedium"
+	h2 
+		color: #020428
+
+h3
+	font-size: 30px
+	font-family: "RobotoLight"
+	margin-bottom: 50px
+
+/*TEAM*/
+.team
+	padding: 65px 0 35px 0
+	.content
+		padding: 0 240px
+		z-index: 2
+		position: relative
+	h4
+		font-size: 30px
+		font-family: "RobotoBlack"
+		text-transform: uppercase
+	.h4
+		font-size: 21px
+		text-transform: uppercase
+		font-family: "RobotoBlack"
+		text-align: center
+		margin-top: 15px
+.team-list
+	margin: 95px 0 0 0
+	display: flex
+	justify-content: space-between
+	ul li
+		margin-bottom: 50px
+		span
+			font-size: 20px
+		.mail
+			font-size: 20px
+			font-family: "RobotoLight"
+
+/*SKEW*/
+
+.pos
+	position: relative
+
+.skew-wrap
+    bottom: 0
+    left: 0
+    width: 100%
+    padding-bottom: 0
+    z-index: 1
+    height: 100px
+    position: absolute
+    &.cust
+    	height: 145px
+.skew
+    width: 100%
+    height: 100%
+    background-color: #fff
+    top: 0
+    left: 0
+    backface-visibility: hidden
+    transform: skewY(-3deg)
+    transform-origin: 100% 0
+    position: absolute
+		
+
+/*FOOTER*/
+
+.bottom-wrap
+	position: relative
+	&:after
+		content: ''
+		background: url('../img/sb.svg') no-repeat
+		background-position-y: bottom
+		background-position-x: right
+		position: absolute
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+		opacity: 0.3
+
+
+.footer
+	padding-bottom: 60px
+	position: relative
+	background: #0aace4
+	h3
+		font-size: 40px
+		text-transform: uppercase
+		font-family: "RobotoBlack"
+		text-align: center
+		padding: 100px 0 0 0
+	.content
+		padding: 0 215px
+		z-index: 2
+		position: relative
+	
+
+.form-block
+	display: flex
+	justify-content: center
+	margin-bottom: 90px
+	form
+		display: flex
+		justify-content: space-between
+		max-width: 405px
+		width: 100%
+		input
+			font-size: 24px
+			background: transparent
+			border: none
+			border-bottom: 2px solid #000
+			margin-right: 15px
+			&::-webkit-input-placeholder 
+				color: #000
+		button
+			font-size: 24px
+			width: 160px
+			height: 40px
+			border: 2px solid #000
+			background: transparent
+			cursor: pointer
+
+.subscribe
+	display: flex
+	justify-content: center
+	flex-direction: column
+	text-align: center
+	margin-bottom: 45px
+	span
+		&:first-child
+			margin-right: 35px
+	&:after
+		content: ''
+		border: 1px solid #000
+		width: 565px
+		margin: auto
+		margin-top: 55px
+	&-note
+		display: flex
+		justify-content: center
+		margin-top: 22px
+
+.btn-primary
+	width: 610px
+	height: 60px
+	background: #fff
+	border-radius: 215px
+	display: flex
+	justify-content: center
+	align-items: center
+	text-transform: uppercase
+	font-family: "RobotoBlack"
+	font-size: 30px
+	margin: auto
+
+.btn-default
+	height: 35px
+	padding: 0 30px
+	border-radius: 25px
+	border: 2px solid #000
+	display: inline-block
+	font-size: 22px
+	font-family: "RobotoMedium"
+	display: flex
+	align-items: center
+
+.footer-block
+	&:first-child
+		width: 230px
+		margin-right: 40px
+		font-size: 14px
+	&:nth-child(2)
+		display: flex
+		flex-direction: column
+		font-size: 17px
+		font-family: "RobotoMedium"
+		margin-top: 79px
+	&:nth-child(3)
+		margin-left: auto
+	span
+		font-size: 22px
+		font-family: "RobotoBold"
+		margin-bottom: 50px
+		display: block
+	.btn-default
+		max-width: 210px
+		width: 100%
+		padding: 0
+		justify-content: center
+		margin: auto
+
+.footer-bottom-block
+	display: flex
+	&:first-child
+		margin-bottom: 70px
+	
+.socials
+	text-align: center
+	margin-top: 15px
+	ul
+		display: flex
+		align-items: center
+		li
+			margin: 0 10px
+	span
+		display: block
+		margin: 25px 0 20px 0
+
+.footer-info
+	display: flex
+	width: 100%
+	li
+		font-size: 14px
+		&:first-child
+			max-width: 230px
+			width: 100%
+			margin-right: 40px
+		&:nth-child(2)
+			max-width: 215px
+			width: 100%
+			margin-right: 60px
+		&:nth-child(3)
+			max-width: 155px
+			width: 100%
+			margin-right: 65px
+		&:nth-child(4)
+			display: flex
+			max-width: 220px
+			width: 100%
+		a
+			font-size: 18px
+			line-height: 18px
+
+
+
+/*FORM*/
+
+.overflow-bg
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	z-index: 10
+	display: none
+
+.overflow-form
+	width: 690px
+	background: #04a9e9
+	border-radius: 25px 
+	padding: 55px 75px 40px 75px
+	box-sizing: border-box
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 11
+	-webkit-box-shadow: 0px 33px 90px 0px rgba(0,0,0,0.17)
+	-moz-box-shadow: 0px 33px 90px 0px rgba(0,0,0,0.17)
+	box-shadow: 0px 33px 90px 0px rgba(0,0,0,0.17)
+	span 
+		font-size: 40px 
+		text-transform: uppercase
+		text-align: center
+		font-family: "RobotoBlack"
+		display: block
+		margin-bottom: 40px
+	form 
+		input 
+			height: 50px 
+			border: 1px solid #000
+			display: block
+			width: 100%
+			background: transparent
+			border-radius: 25px
+			margin-bottom: 15px
+			padding: 0 25px
+			box-sizing: border-box
+			font-size: 24px
+			font-style: italic
+			outline: none
+			&::-webkit-input-placeholder
+				color: #000
+		textarea
+			border: 1px solid #000
+			width: 100%
+			border-radius: 25px
+			padding: 10px 25px 10px 25px
+			box-sizing: border-box
+			background: transparent
+			height: 200px
+			font-style: italic
+			font-size: 24px
+			outline: none
+			&::-webkit-input-placeholder
+				color: #000
+		.btn-block
+			display: flex
+			justify-content: center 
+			margin-top: 30px
+			button 
+				width: 225px
+				height: 55px 
+				background: #fff
+				border-radius: 30px
+				font-size: 32px
+				border: none
+				font-family: "RobotoBold"
+				cursor: pointer
+	.close
+		position: absolute
+		top: 15px 
+		right: 25px
+		z-index: 6
+		width: 15px 
+		height: 15px 
+		cursor: pointer
+		&:after
+			content: ''
+			background: url('../img/close.svg') no-repeat
+			width: 13px
+			height: 13px
+			position: absolute
+
+
+
+
+
+
+
+
+/*MEDIA*/
+
+@media(max-width: 1480px)
+	.container
+		width: 1070px
+	.footer
+		.container
+			padding: 0 50px
+	.team 
+		.content
+			padding: 0 120px
+		h4
+			font-size: 24px
+	h2
+		font-size: 72px
+	.about
+		.text-block
+			width: 650px
+			p
+				width: 470px
+	.advantages
+		li
+			max-width: 205px
+		&-text
+			margin: 0 16px
+		&-img object
+			transform: scale(0.7)
+	.works
+		h2
+			margin-left: 80px
+	.works-list
+		padding: 0 120px
+		&-img object
+			transform: scale(0.8)
+	.brief
+		.text-block
+			margin-left: 80px
+			width: 530px
+	.btn-more
+		font-size: 26px
+	.text-block-bottom
+		padding-right: 0
+	.graph
+		max-width: 470px
+	.live-graph
+		transform: scale(0.8)
+		margin-left: -55px
+	.live-stats ul 
+		p, span
+			font-size: 13px
+	.live-total ul li 
+		p
+			font-size: 20px
+		span
+			font-size: 36px
+	.advantages-img
+		svg
+			zoom: 0.7
+	.works-list li:after
+		background-repeat: no-repeat
+		width: 65px
+		top: 25px
+		right: -35px
+	.footer .content
+		padding: 0 115px
+	.about
+		padding-top: 110px
+	.ipad
+		margin-right: -200px
+	.smartbrief
+		padding-bottom: 90px
+	.s-wrap:before
+		top: 20%
+	.logo-big object
+		transform: scale(0.6)
+	.adv-caption 
+		.logo-big
+			margin: -50px 0 0 -130px
+		h3
+			font-size: 50px
+	.advantages
+		margin-top: -90px
+	.works
+		.text-block-bottom
+			padding-right: 30px
+	.product-img object
+		transform: scale(0.6)
+		margin-left: -100px
+
+@media(max-width: 1100px)
+	.container
+		width: 760px
+	.top_line
+		.logo 
+			padding-left: 0
+			object
+				transform: scale(0.7)
+				margin-left: -20px
+	.btn-default
+		padding: 0 20px
+		font-size: 16px
+	.btn-success
+		font-size: 16px
+	.top_link ul 
+		margin-right: 10px
+		li
+			font-size: 16px
+	.h1 
+		margin-top: 170px
+		h1
+			font-size: 80px
+		span
+			font-size: 40px
+	.main-text
+		margin-top: 100px
+	.main-text p
+		font-size: 24px
+	.smartbrief .content
+		padding-left: 30px
+	p 
+		font-size: 16px
+	.logo2 
+		margin-bottom: 30px
+		padding-bottom: 25px
+		object
+			transform: scale(0.7)
+			margin-left: -88px
+	h2
+		font-size: 50px
+	.btn-primary
+		width: 100%
+	.subscribe:after
+		width: 430px
+	.footer .content,
+	.team .content
+		padding: 0 20px
+	.footer-block:nth-child(2)
+		margin-top: 75px
+		font-size: 18px
+	.team
+		padding-top: 30px
+	.about 
+		padding-top: 36px
+		.text-block
+			padding-left: 20px
+		h3
+			font-size: 30px
+		object
+			transform: scale(0.5)
+	.works-list
+		padding: 0
+		&-img object
+			transform: scale(0.7)
+	.works-list li:after
+		top: 26px
+	.advantages
+		justify-content: space-around
+		margin-top: -30px
+		li 
+			margin-bottom: 30px
+		&-img
+			height: 170px
+	.works h2
+		margin-left: 0
+	.brief 
+		.text-block
+			margin-left: 20px
+	.btn-more
+		font-size: 22px
+		object 
+    		margin-bottom: -6px
+    		margin-left: 5px
+    		transform: scale(0.6)
+	.percent p 
+		.count
+			font-size: 86px
+	.graph
+		max-width: 390px
+		padding-right: 0
+	.live-graph
+		transform: scale(0.61)
+		margin-left: -110px
+	.p-note 
+		p, span
+			font-size: 14px
+	.day
+		font-size: 24px
+	.live-stats ul p
+		font-size: 10px
+	.live-note 
+		p
+			font-size: 14px
+	.live-total ul li 
+		margin-right: 24px
+		span
+			font-size: 22px
+		p 
+			font-size: 16px
+		&.distr
+			margin-left: 34px
+	.progress
+		height: 35px
+	.total-bottom
+		margin-top: 20px
+		p 
+			font-size: 16px!important
+	.live
+		padding: 120px 0
+	.logo-big object
+		transform: scale(0.4)
+	.adv-caption h3
+		font-size: 32px
+	.product-block
+		padding: 0
+	.how
+		padding: 40px 0
+	.upcoming-list li
+		margin: 0 15px
+		p 
+			font-size: 38px
+	.graph 
+		.tooltip
+			&:nth-child(3)
+				top: 100px
+			&:nth-child(2)
+				top: 265px
+			&:nth-child(1)
+				top: 190px
+				left: 200px
+			&:nth-child(4)
+				top: 327px
+				left: 170px
+			&:nth-child(5)
+				left: 225px
+				top: 475px
+			&:nth-child(6)
+				top: 235px
+				left: 307px
+		.tooltip.th
+			top: 416px
+			left: 100px
+	.tooltip
+		font-size: 12px!important
+
+
+@media(max-width: 767px)
+	.container
+		width: 100%
+	.top_link
+		display: block
+		ul 
+			justify-content: center
+			margin: 20px 0
+	.top_line
+		display: block
+		text-align: center
+		.btn-default
+			width: 120px
+			justify-content: center
+			margin: auto
+	.h1
+		margin-top: 75px
+		h1 
+			font-size: 65px
+			line-height: 72px
+		span
+			font-size: 30px
+	.main-text 
+		margin-top: 70px
+		p
+			font-size: 18px
+	.smartbrief 
+		background: #fff
+		.content
+			padding: 0 30px
+		.text-block
+			display: block
+			ul 
+				max-width: 100%
+				li span
+					font-size: 50px
+	.text-block-bottom a:first-child
+		margin: 20px 0
+	.about object
+		display: none
+	.footer-bottom-block
+		display: block
+		text-align: center
+	.footer-block
+		span
+			margin-bottom: 20px
+		&:first-child
+			width: 100%
+		&:nth-child(2)
+			margin-top: 40px
+	.socials ul
+		justify-content: center
+		margin-top: 35px
+	.form-block
+		margin-bottom: 40px
+	.footer h3
+		padding-top: 10px
+		font-size: 30px
+	.footer-info
+		display: block
+		text-align: center
+		li
+			&:first-child
+				max-width: 100%
+			&:nth-child(2)
+				max-width: 100%
+			&:nth-child(3)
+				max-width: 100%
+			&:nth-child(4)
+				max-width: 100%
+				justify-content: center
+	.footer-bottom-block:first-child
+		margin-bottom: 45px
+	.team-list
+		margin-top: 50px
+		ul li 
+			.mail, span
+				font-size: 16px
+	.team 
+		padding-top: 0
+		h4
+			font-size: 18px
+	.btn-primary
+		font-size: 32px
+	h2 	
+		font-size: 42px
+	.works-list
+		justify-content: space-around
+		flex-flow: row wrap
+		li 
+			width: 250px
+			&:after
+				display: none
+	.works 
+		margin-top: 0
+		padding-top: 30px
+		h2
+			text-align: center
+			margin-bottom: 30px
+	.ipad
+		display: none
+	.brief 
+		padding: 0 0 45px 0
+		.text-block
+			width: 100%
+			margin: 0 20px
+			h2:nth-child(2)
+				margin-bottom: 30px
+	.stats
+		display: block
+	.live
+		padding-top: 80px
+	.live-total
+		margin-top: 30px
+		ul 
+			justify-content: space-around
+	.progress
+		max-width: 500px
+		margin: auto
+	.graph
+		padding-right: 0
+		margin: auto
+		max-width: 430px
+		.live-graph
+			transform: scale(0.75)
+			margin-left: -70px
+		.live-stats ul
+			box-sizing: border-box
+			width: 440px
+			span 
+				font-size: 10px
+	.s-wrap:before
+		top: 40%
+	.subscribe:after
+		width: 80%
+	.logo object
+		margin-left: 0
+	.logo2 object
+		transform: scale(0.6)
+		margin-left: -115px
+	.how 
+		h2
+			font-size: 50px 
+			margin-bottom: 50px
+	.upcoming-list li
+		object
+			transform: scale(0.8)
+		p 
+			font-size: 25px
+	.upcoming:before,
+	.upcoming:after
+		width: 80%
+	.product h3
+		font-size: 38px
+	.product-img object
+		margin-left: -90px
+	.overflow-form
+		width: 80%
+	.brief .text-block h2
+		font-size: 65px 
+		span
+			font-size: 40px
+	.brief .text-block p
+		font-size: 16px
+	.upcoming-list
+		flex-flow: row wrap
+	.product-text
+		margin-left: -50px 
+		p 
+			font-size: 14px
+		.text-block-bottom a
+			font-size: 12px
+			object 
+				margin: 0 0 -3px 5px
+	.about
+		padding-top: 45px
+	.adv-caption .logo-big
+		margin-left: -165px
+	.adv-caption h3
+		margin-right: 0
+		font-size: 20px
+	.advantages li
+		margin-bottom: 0
+	.graph 
+		.tooltip
+			&:nth-child(3)
+				top: 100px
+			&:nth-child(2)
+				top: 265px
+				left: 47px
+			&:nth-child(1)
+				top: 190px
+				left: 200px
+			&:nth-child(4)
+				top: 350px
+				left: 212px
+			&:nth-child(5)
+				left: 225px
+				top: 475px
+			&:nth-child(6)
+				top: 255px
+				left: 380px
+		.tooltip.th
+			top: 416px
+			left: 100px
+
+@media(max-width: 560px)
+	.works-list li
+		width: 175px
+	.footer .container
+		padding: 0 10px
+	.about 
+		.text-block
+			max-width: 100%
+			p 
+				width: 100%
+	.h1 
+		h1
+			font-size: 36px
+		span 
+			font-size: 22px
+	.main-btn
+		display: block
+		.btn-default
+			width: 110px
+			margin: 0 auto 20px auto
+			justify-content: center
+	.smartbrief .content
+		padding: 0 10px
+	p 
+		font-size: 14px
+	.btn-more
+		font-size: 18px
+	.form-block form input
+		width: 70%
+	.btn-primary
+		height: 50px
+		font-size: 20px
+	.footer .content, .team .content
+		padding: 0
+	.team-list
+		display: block
+		ul li
+			margin-bottom: 22px
+			text-align: center
+	.team .h4
+		margin-top: 50px
+	.about .text-block
+		padding-left: 0
+	.skew-wrap
+		height: 70px
+	.brief .text-block
+		margin: 0
+	.top_link ul li
+		font-size: 12px
+		margin-right: 9px
+		&:last-child
+			margin-right: 0
+	.h1, .main-text
+		margin-top: 40px
+	h2 
+		font-size: 36px
+		line-height: normal
+	.live 
+		span
+			font-size: 16px
+		h2 
+			line-height: 50px
+	.percent p .count
+		font-size: 58px
+	.graph 
+		text-align: center
+		margin-top: 20px
+		.live-graph
+			transform: scale(0.5) translate(-100%,0)
+			margin-left: 50%
+	.day
+		font-size: 18px
+		margin-top: -55px
+	.live-note
+		display: block
+		text-align: center
+		p
+			margin-top: 10px
+		.btn-default
+			margin: auto
+	.live-total ul 
+		margin-bottom: 22px
+		li 
+			span
+				font-size: 18px
+			p 
+				font-size: 14px
+			&.distr
+				margin-left: 0
+				&:before
+					display: none
+	.live-stats ul
+		display: block
+		height: auto
+		padding: 8px 0 8px 20px
+		width: 100%!important
+		span 
+			font-size: 14px!important
+		li:after
+			display: none
+	.about 
+		padding-top: 45px
+		padding-bottom: 115px
+		h3
+			font-size: 20px
+			margin-bottom: 26px
+	.smartbrief
+		padding-bottom: 45px
+	.top 
+		padding-bottom: 115px
+	.logo2 object
+		transform: scale(0.4)
+		margin-left: -175px
+	.percent
+		justify-content: center
+	.footer
+		padding: 10px 0
+		h3
+			font-size: 22px
+	.socials ul li
+		margin: 0 6px
+	.works-list-img
+		height: 80px
+	.top_line
+		overflow: hidden
+	.brief .text-block h2
+		font-size: 36px
+		span 
+			font-size: 20px
+	.legend
+		display: none
+	.s-wrap:before
+		display: none
+	.works .content
+		transform: none
+		&-wrap
+			transform: none
+	.adv-caption
+		flex-direction: column
+		.logo-big
+			margin-left: 0
+			display: flex
+			justify-content: center
+	.adv-caption h3
+		margin-top: -50px
+		font-size: 30px
+	.works .text-block-bottom
+		padding-right: 0
+		text-align: center
+	.how h2
+		font-size: 34px
+	.product-block
+		flex-direction: column
+	.product-text
+		width: 100%
+		margin-left: 0
+	.upcoming h4
+		font-size: 20px
+	.product 
+		overflow: hidden
+	.brief-example.open
+		padding-top: 40px
+	.overflow-form
+		padding: 55px 15px 40px 15px
+		span 
+			font-size: 24px
+	.overflow-form form input
+		height: 36px
+	.overflow-form form .btn-block button
+		height: 40px 
+		width: 140px
+		font-size: 22px
+	.live-stats ul li
+		justify-content: center
+		p 
+			font-size: 14px
+	.skew-wrap.cust
+		height: 100px
